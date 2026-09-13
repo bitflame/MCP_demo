@@ -17,10 +17,10 @@ pipeline {
                 sh 'uv run python -c "import weather; print(\'weather.py imports cleanly\')"'
             }
         }
-        stage('Build container image') {
+        /*stage('Build container image') {
             steps {
                 sh 'podman build -t mcp-demo:${BUILD_NUMBER} .'
             }
-        }
+        }*/
     }
 }
